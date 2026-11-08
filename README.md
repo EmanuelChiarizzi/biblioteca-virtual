@@ -47,24 +47,34 @@ O projeto utiliza Hibernate com ddl-auto=update para criar e atualizar as tabela
 
 ## Como executar no Windows
 
-Requisitos:
-- JDK 21
+**Pré-requisitos:**
+- Java JDK 21
 - MySQL Server 8
-- Porta 8080 disponivel
+- Banco de dados `biblioteca_virtual` criado
+- Porta 8080 disponível
 
-No PowerShell, dentro da pasta do projeto:
+Abra o PowerShell na pasta raiz do projeto.
 
-1. Configure a senha do MySQL:
+**1. Configure a senha do MySQL:**
 
+```powershell
 $env:DB_PASSWORD = Read-Host "Senha do MySQL"
+```
 
-2. Execute a aplicacao:
+Informe a senha do usuário `root` do MySQL quando solicitada.
 
+**2. Execute a aplicação:**
+
+```powershell
 .\mvnw.cmd spring-boot:run
+```
 
-API: http://localhost:8080
+**3. Acesse os serviços:**
 
-Swagger: http://localhost:8080/swagger-ui/index.html
+- API REST: http://localhost:8080
+- Documentação Swagger: http://localhost:8080/swagger-ui/index.html
+
+**Observação:** a senha é armazenada apenas na sessão atual do PowerShell e precisa ser informada novamente ao abrir um novo terminal. O arquivo `application.properties` utiliza a variável de ambiente `DB_PASSWORD`, evitando armazenar credenciais diretamente no código-fonte.
 
 ## Arquitetura
 
