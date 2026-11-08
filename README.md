@@ -75,21 +75,46 @@ Swagger: http://localhost:8080/swagger-ui/index.html
 - controller: endpoints REST
 - exception: tratamento de erros
 
-## Uso de inteligencia artificial
+## Uso de Inteligência Artificial
 
-Ferramenta: ChatGPT (OpenAI).
+Durante o desenvolvimento do projeto, utilizei o **ChatGPT (OpenAI)** como ferramenta de apoio técnico, principalmente para auxiliar na identificação, análise e resolução de erros, além de fornecer estruturas iniciais de código que serviram como base para a implementação da aplicação.
 
-Utilizacao: apoio na estruturacao do backend, geracao de codigo, depuracao, documentacao e testes.
+A inteligência artificial também foi utilizada como suporte nas seguintes atividades:
 
-Verificacao: compilacao Maven, execucao do Spring Boot, testes HTTP dos CRUDs e consulta das rotas pelo Swagger. O tratamento de erros teve sua compilacao verificada, sem teste final de resposta.
+- **Estruturação do código:** sugestões para a organização da arquitetura em camadas, utilizando Controllers, Services, Repositories, Models e DTOs.
+- **Depuração e resolução de problemas:** auxílio na interpretação de mensagens de erro, identificação de possíveis causas e aplicação de correções.
+- **Desenvolvimento da API REST:** apoio na elaboração e implementação de endpoints HTTP e operações CRUD com Java e Spring Boot.
+- **Persistência de dados:** orientações para a integração com MySQL, utilização do Spring Data JPA e mapeamento de entidades.
+- **Validação e tratamento de exceções:** suporte na implementação de validações de entrada e respostas HTTP apropriadas.
+- **Documentação técnica:** auxílio na organização do README, documentação de endpoints e utilização do Swagger/OpenAPI.
 
-## Contribuicoes
+A utilização da IA ocorreu como recurso de suporte ao processo de desenvolvimento. Fiquei responsável pela configuração do ambiente, execução dos procedimentos, integração dos componentes, acompanhamento dos resultados e realização dos testes funcionais.
 
-- Emanuel - GitHub: @EmanuelChiarizzi
+## Contribuições Individuais
 
-As contribuicoes individuais devem ser descritas conforme o trabalho efetivamente realizado por cada integrante.
+**Integrante:** Emanuel Cavalcante Chiarizzi  
+**GitHub:** [@EmanuelChiarizzi](https://github.com/EmanuelChiarizzi)  
+**Composição da equipe:** Projeto individual — equipe formada por apenas um integrante.
 
-## Observacoes
+Fui o único integrante responsável pelo desenvolvimento e entrega do projeto Biblioteca Virtual, participando de todas as etapas de construção da aplicação, desde a preparação do ambiente até a publicação do código-fonte.
 
-Projeto exclusivamente backend, sem interface grafica.
-O desenvolvimento foi realizado com apoio de IA.
+### Atividades técnicas realizadas
+
+1. **Planejamento e arquitetura:** definição da estrutura da API REST e organização do projeto em camadas, seguindo princípios de separação de responsabilidades.
+2. **Configuração do ambiente:** preparação do JDK 21, Maven, Spring Boot e ambiente de desenvolvimento no Visual Studio Code.
+3. **Modelagem e persistência:** criação e configuração do banco de dados MySQL, desenvolvimento das entidades JPA e implementação dos repositórios com Spring Data JPA.
+4. **Implementação dos CRUDs:** desenvolvimento e integração das operações de cadastro, consulta, atualização e exclusão para livros, autores, categorias, empréstimos e materiais digitais.
+5. **Regras de negócio:** implementação da camada de serviços, da pesquisa de livros por título e do relacionamento entre livros e empréstimos.
+6. **Validação e tratamento de erros:** integração de DTOs, validações de entrada e mecanismos de tratamento de exceções HTTP.
+7. **Testes e depuração:** execução de requisições HTTP via PowerShell, verificação das operações CRUD, testes de integração com o banco e correção de problemas identificados durante o desenvolvimento.
+8. **Documentação da API:** configuração do Swagger/OpenAPI para visualização dos endpoints e elaboração da documentação técnica no README.
+9. **Versionamento e publicação:** inicialização do repositório Git, organização dos arquivos, criação de commit e publicação do projeto no GitHub.
+10. **Preparação da entrega:** organização dos arquivos do projeto, identificação do commit utilizado e geração do pacote ZIP para submissão acadêmica.
+
+## Observações
+
+O projeto consiste em uma aplicação **backend desenvolvida em Java com Spring Boot**, disponibilizando uma API REST para gerenciamento de uma biblioteca virtual escolar.
+
+A aplicação utiliza MySQL para persistência dos dados e Swagger/OpenAPI para documentação e exploração dos endpoints.
+
+O desenvolvimento foi realizado individualmente, com utilização de inteligência artificial como ferramenta de apoio técnico.
